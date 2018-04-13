@@ -1,3 +1,10 @@
+#TODO:
+# 1)Testing
+# 2)Implementation of other strategies. Analysis and comperation.
+# 3)Provide math induction of optimal solution.
+#FIXME:
+# None
+
 import random
 import math
 
