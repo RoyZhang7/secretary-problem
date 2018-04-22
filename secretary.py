@@ -19,7 +19,7 @@ samplesize = round(len(candidate) * math.exp(-1))
 # another method is selecting sqrt(n) sample
 print ("sample size is " + str(samplesize))
 
-sample = candidate[ : samplesize - 1]
+sample = candidate[ : samplesize]
 
 benchmark = max(sample)
 print ("maximum of the sample is " + str(benchmark))
@@ -30,7 +30,7 @@ while index <= len(candidate)-1:
         best = index
         break
     index += 1
-if best >= benchmark:
+if candidate[best] >= benchmark:
     print ("Best candidate found is " + str(index+1) + " with talent " + str(candidate[index]))
 else:
     print ("Could not find a best candidate")
